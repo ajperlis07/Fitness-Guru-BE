@@ -128,4 +128,89 @@ end
 
 ## WORKOUTS ##
 
+workouts = [
+    {
+        routine_id: 1 ,
+        exercise_id: 1 ,
+        notes: "Do 4 sets of 8-10 reps each" 
+    },
+    {
+        routine_id: 1 ,
+        exercise_id: 5 ,
+        notes: " Do 4 sets of 10-12 reps each" 
+    },
+    {
+        routine_id: 1 ,
+        exercise_id: 10 ,
+        notes: "Do 5 sets of 8-10 reps each" 
+    },
+    {
+        routine_id: 1 ,
+        exercise_id: 16 ,
+        notes: "Do 5 sets of 12 reps each" 
+    },
+    {
+        routine_id: 1 ,
+        exercise_id: 18 ,
+        notes: "Do 6 sets of 10 reps each with low weight" 
+    },
+    {
+        routine_id: 2 ,
+        exercise_id: 3 ,
+        notes: "Do as many as you can in 3 sets" 
+    },
+    {
+        routine_id: 2 ,
+        exercise_id: 4 ,
+        notes: "Do 2 sets of as many as you could do" 
+    },
+    {
+        routine_id: 2 ,
+        exercise_id: 24 ,
+        notes: "Run at slow pace for 20 mins" 
+    },
+    {
+        routine_id: 2 ,
+        exercise_id: 25 ,
+        notes: "Walk at a moderate pace for 10 mins" 
+    },
+    {
+        routine_id: 2 ,
+        exercise_id: 13 ,
+        notes: "6 sets of 8-10 reps each with low weight" 
+    },
+    {
+        routine_id: 3 ,
+        exercise_id: 21 ,
+        notes: "Do sprints for 10 mins at 50m" 
+    },
+    {
+        routine_id: 3 ,
+        exercise_id: 22 ,
+        notes: "Row at a consistent pace for 15 mins" 
+    },
+    {
+        routine_id: 3 ,
+        exercise_id: 23 ,
+        notes: "Ride at a fast pace for 20 mins" 
+    },
+    {
+        routine_id: 3 ,
+        exercise_id: 24 ,
+        notes: "Run at a moderate pace for 10 mins" 
+    },
+    {
+        routine_id: 3 ,
+        exercise_id: 25 ,
+        notes: "Walk at a moderate pace for 15 mins" 
+    }
+
+
+    
+]
+
+workouts.each do |workout|
+    Workout.create!(workout)
+end
+
 puts "!!!!! GET PUMPED !!!!!"
