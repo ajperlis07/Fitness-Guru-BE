@@ -1,6 +1,6 @@
 class ExercisesController < ApplicationController
     def index 
-        @exercises = Exercise.all
+        @exercises = Exercise.order(:id)
         render json: @exercises
     end
 

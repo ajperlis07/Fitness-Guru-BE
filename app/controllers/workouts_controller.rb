@@ -1,6 +1,6 @@
 class WorkoutsController < ApplicationController
     def index 
-        @workouts = Workout.all
+        @workouts = Workout.order(:id)
         render json: @workouts
     end
 

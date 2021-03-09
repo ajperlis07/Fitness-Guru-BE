@@ -1,6 +1,6 @@
 class RoutinesController < ApplicationController
     def index 
-        @routines = Routine.all
+        @routines = Routine.order(:id)
         render json: @routines
     end
 
