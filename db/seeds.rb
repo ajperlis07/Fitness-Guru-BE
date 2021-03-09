@@ -1,3 +1,5 @@
+Exercise.destroy_all 
+Routine.destroy_all
 # Routine seed data
 routines = [
     {
@@ -12,7 +14,7 @@ routines = [
 ]
 
 routines.each do |routine|
-    Routine.create(routines)
+    Routine.create!(routine)
 end
 
 ## Exercises###
@@ -121,7 +123,7 @@ exercises = [
 
 
 exercises.each do |exercise|
-    Exercise.create(exercises)
+    Exercise.create!(exercise)
 end
 
 ## WORKOUTS ##
